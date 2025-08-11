@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lis Noodle House</title>
+  <style>
+
+    body {
+    background-image: url(logo.avif);
+    margin: 0;
+    align-items: center;
+    }
+    h1{
+      font-size: 40px;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-image: url("noodle shop.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 100px;
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      background-color: rgba(255, 255, 255, 0.3); 
+      background-blend-mode: lighten;
+      color: #090909; 
+      z-index: 10;
+}
+nav a {
+  color: #060707; 
+  text-decoration: none;
+  font-size: 30px; 
+  padding: 8px 16px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+nav a:hover {
+  color: white;
+  background-color: #4caf50; 
+  border: 1px solid rgb(9, 10, 10);
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.7);
+}
+main {
+  padding: 130px 20px 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-items: center;
+}
+.Instant,
+.Noodle,
+.Beverage {
+  width: 90%;
+  max-width: 600px;
+  padding: 30px 20px 40px;
+  border: 2px solid black;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  color: hsl(0, 0%, 5%);
+  text-align: center;
+  background-position: center;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+.Instant h1,
+.Noodle h1,
+.Beverage h1{
+background-color: rgba(54, 46, 46, 0.3); 
+background-blend-mode: lighten;
+border-radius: 12px;
+color: #fdfbfb;
+}
+
+.Instant:hover,
+.Noodle:hover, 
+.Beverage:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(120, 44, 44, 0.3);
+  background-color: #4caf50;
+  
+}
+
+.Instant img, 
+.Noodle img, 
+.Beverage img {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgb(117, 45, 45);
+ 
+}
+
+
+
+.Instant:hover img,
+.Noodle:hover img,
+.Beverage:hover img {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.Instant {
+  background-image: url("Instand noodle(2).jpg");
+  margin-top: 70px;
+}
+
+.Noodle {
+  background-image: url("noodle soup(2).avif");
+  margin-top: 70px;
+}
+
+.Beverage {
+  background-image: url("beverage(2).jpg");
+  margin-top: 70px;
+}
+.Container {
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  border: 2px solid #000;
+  margin: 20px auto;
+  background-color: #fefefe;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+}
+
+input[type="text"],
+input[type="email"]
+ {
+  margin: 10px auto;   
+  display: block;
+  width: 95%;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+.Submit {
+  background-color: rgb(103, 170, 103);
+  border: none;
+  border-radius: 12px;
+  color: aliceblue;
+  padding: 10px 20px;
+  font-size: larger;
+  margin:  auto;
+  display: block;
+}
+footer {
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding: 15px;
+  font-size: 14px;
+  margin-top: 30px;
+}
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+  }
+
+  nav {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    font-size: large;
+  }
+
+  .Instant,
+  .Noodle,
+  .Beverage,
+  .Container {
+    width: 90%;
+    max-width: 500px;
+  }
+}
+
+</style>
+</head>
+<body>
+  <header>
+    <h1>Lis Noodle House</h1>
+    <nav>
+      <a href="Instant noodle.html">Instant noodle</a>
+      <a href="Noodle soup.html">Noodle Soup</a>
+      <a href="Beverage&Drink.html">Beverage&Drink</a>
+    </nav>
+  </header>
+  <main>
+    <div class="Instant noodle">
+      <h1>Instant noodle</h1>
+      <a href="Instant noodle.html"><img src="Instand noodle(2).jpg" alt="Instant noodle" /></a>
+    </div>
+    <div class="Noodle">
+      <h1>Noodle Soup</h1>
+      <a href="Noodle soup.html"><img src="noodle soup(2).avif" alt="Noodle soup" /></a>
+    </div>
+
+    <div class="Beverage">
+      <h1>Beverage</h1>
+      <a href="Beverage&Drink.html"><img src="beverage(2).jpg" alt="Beverage" /></a>
+      </div></main>
+       <div class="Container">
+           </form>
+            <h1>Contact us</h1>
+            <hr>
+            <form>
+            <label for="Name">Name:</label>
+            <input type="text"><br>
+            <br>
+            <label for="Email">Email:</label>
+            <input type="text">
+            <button class="Submit">Submit</button>
+        </form>
+    </div>
+<footer>© 2025 Lis Noodle House</footer>
+<body>
+
+</html>

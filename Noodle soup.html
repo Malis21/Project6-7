@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instant noodle</title>
+</head>
+<style>
+     body{
+        background-image: url(noodle\ soup\(2\).avif);
+        margin: 0;
+    }
+    header {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-image: url("noodle shop.jpg");
+       background-size: cover;
+       background-position: center;
+       height: 140px;
+       width: 100%;
+       color: #090909;
+       font-size: 25px;
+       position: fixed;
+       z-index: 1;
+}
+    main{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        padding: 90px 20px ;
+        justify-items: center;
+        overflow: hidden;
+        }
+    .Noodle{
+        padding: 20px;
+        border: 2px solid #000;
+        margin: 10px;
+        background-color: #f9f9f9;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        text-align: center;
+        width: 250px;
+        margin-top: 70px;
+        
+    }
+    .Noodle img{
+        width: 250px;
+        border-radius: 5px;
+    }
+    .Noodle:hover{
+        transition: transform 0.5s ease;
+        transform: translateY(-15px);
+
+
+    }
+ .qty-display {
+    display: inline-block;
+    width: 50px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+  input[type="number"] {
+    width: 50px;
+    height: 35px;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+}
+.Click{
+    color: aliceblue;
+        background: #378f26;
+        padding: 5px;
+        width:35px;
+        font-size: larger;
+        align-items: center;
+        border-radius: 5px;
+}
+.Order{
+    color: aliceblue;
+    background: #378f26;
+    width: 130px;
+    padding: 10px;
+    margin:10px ;
+    font-size: 14px;
+    border-radius: 5px;
+    text-align: center;
+
+}
+footer{
+        text-align: center;
+        color: aliceblue;
+        background-color: black;
+        padding: 10px 10px ;
+        margin-top: 19px;
+}
+.back a{
+     text-decoration: none;
+    color: #f9f9f9;
+    background-color: rgb(86, 156, 15);
+    padding: 20px;
+    border: none;
+    font-size: 22px;
+    font-weight: bolder;
+    border-radius: 12px;
+    
+}
+    
+    
+</style>
+<body>
+    <header>
+    <h1>Noodle Soup</h1>
+    
+    </header>
+    <main>
+      <div class="Noodle">
+    <img src="soup(1).jpg" alt="Noodle Soup">
+    <p><strong>Chinese Noodle Soup</strong></p>
+    <p>Price: 4.5$</p>
+    <form>
+        <div class="qty-box">
+            <button type="button" class="Click" onclick="changeQty(this, 1)">+</button>
+            <span class="qty-display">0</span>
+            <button type="button" class="Click" onclick="changeQty(this, -1)">-</button>
+        </div>
+        <hr>
+        <button class="Order">Order</button>
+    </form>
+</div>
+         <div class=" Noodle">
+            <img src="Soup(2).jpg" alt="Noodle Soup">
+            <p><strong>Udon Noodle Soup</strong></p>
+            <p>Price: 4$</p>
+            <form>
+            <button type="button" class="Click" onclick="changeQty(this, 1)">+</button>
+            <span class="qty-display">0</span>
+            <button type="button" class="Click" onclick="changeQty(this, -1)">-</button>
+            <hr>
+            <button class="Order">Order</button>
+            </form>
+            
+        </div>
+         <div class=" Noodle">
+            <img src="Soup(3).jpg" alt="Noodle Soup">
+            <p><strong>Korean Ramyun Beef Noodle Soup </strong></p>
+            <p>Price: 3$</p>
+            <form>
+            <button type="button" class="Click" onclick="changeQty(this, 1)">+</button>
+            <span class="qty-display">0</span>
+            <button type="button" class="Click" onclick="changeQty(this, -1)">-</button>
+            <hr>
+            <button class="Order">Order</button>
+            </form>
+        </div>
+         <div class=" Noodle">
+            <img src="Soup(4).jpg" alt="Noodle Soup">
+            <p><strong> Shanghai Noodle Soup</strong></p>
+            <p>Price: 3$</p>
+            <form>
+            <button type="button" class="Click" onclick="changeQty(this, 1)">+</button>
+            <span class="qty-display">0</span>
+            <button type="button" class="Click" onclick="changeQty(this, -1)">-</button>
+            <hr>
+            <button class="Order">Order</button>
+            </form>
+        </div>
+         <div class=" Noodle">
+            <img src="Soup(5).jpg" alt="Noodle Soup">
+            <p><strong>  Taiwanese Beef Noodle Soup</strong></p>
+            <p>Price: 3$</p>
+            <form>
+            <button type="button" class="Click" onclick="changeQty(this, 1)">+</button>
+            <span class="qty-display">0</span>
+            <button type="button" class="Click" onclick="changeQty(this, -1)">-</button>
+            <hr>
+            <button class="Order">Order</button>
+            </form>
+        </div>
+         <div class=" Noodle">
+            <img src="Soup(6).jpg" alt="Noodle Soup">
+            <p><strong> Nom Banh Chok or Khmer Noodles</strong></p>
+            <p>Price: 2$</p>
+            <form>
+            <button type="button" class="Click" onclick="changeQty(this, 1)">+</button>
+            <span class="qty-display">0</span>
+            <button type="button" class="Click" onclick="changeQty(this, -1)">-</button>
+            <hr>
+            <button class="Order">Order</button>
+            </form>
+        </div>
+          <div class=" Noodle">
+            <img src="soup(7).jpg" alt="Noodle Soup">
+            <p><strong> Vietnamese Rice Noodle Soup</strong></p>
+            <p>Price: 2$</p>
+            <form>
+            <button type="button" class="Click" onclick="changeQty(this, 1)">+</button>
+            <span class="qty-display">0</span>
+            <button type="button" class="Click" onclick="changeQty(this, -1)">-</button>
+            <hr>
+            <button class="Order">Order</button>
+            </form>
+        </div>
+    </main>
+    <div class="back">
+        <a href="index.html">Back</a>
+    </div>
+   <script>
+function changeQty(button, delta) {
+    const qtySpan = button.parentElement.querySelector('.qty-display');
+    let currentValue = parseInt(qtySpan.textContent) || 0;
+    let newValue = currentValue + delta;
+    if (newValue < 0) newValue = 0;
+    qtySpan.textContent = newValue;
+}
+</script>
+
+    
+    
+    <footer>© 2025 Lis Noodle House</footer>
+    
+</body>
+</html>
